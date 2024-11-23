@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+#cuerpo{
+    background-color: rgb(230, 230, 230);
+    font-family: "Sour Gummy", sans-serif;
+    input{
+        transition: 0.5s;
+        text-align: center;
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px black;
+    }
+    input:hover{
+        box-shadow: 0px 0px 15px black;
+        transition: 0.5s;
+    }
+    #btnBuscar{
+        height: 40px;
+        margin: 0;
+        border: none;
+        background-color: lightslategray;
+        color: black;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+    #btnBuscar:hover{
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        background-color: gray;
+        color: white;
+        transition: 0.5s;
+    }
+}
+.contenido{
+    margin: 2% 10%;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(66, 66, 66);
+    background-color: rgb(255, 255, 255);
+    
+    img{
+        transition: 0.5s;
+    }
+    img:hover{
+        transition: 0.5s;
+        transform: scale(1.1);
+    }
+    
+}
+.contenedoresPoke{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 2fr));
+    justify-items: center;
+    column-gap: 0px;
+    row-gap: 40px;
+    
+    .pokemon{
+        width: 90%;
+        transition: 0.5s;
+        cursor: pointer;
+        #nombre{
+            text-transform: uppercase;
+        }
+    }
+    .pokemon:hover{
+        transition: 0.4s;
+        transform: scale(1.1); 
+    }
+}
+#sourcePoke{
+    text-align: center;
+}
+#imagen{
+    width: 60%;
+    
+}
+
+#nombre{
+    text-shadow: 0px 0px 20px rgb(0, 0, 0), 0px 0px 30px white, 0px 0px 40px rgb(0, 0, 0);
+    color: black;
+    font-weight: bold;
+}
+#habilidades{
+    border: 1px solid black;
+    transition: 0.5s;
+}
+#habilidades:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px black;
+    background-color: white;
+}
+#cartaPokemon{
+    width: 100%;
+    height: 100%;
+    .imagenTam{
+        padding: 10%;
+        height: 100%;
+        text-align: center;
+        img{
+            height: 100%;
+            width: 80%;
+        }
+    }
+    
+}
+#estadisticas{
+    display: flex;
+    border: 1px solid black;
+    #conImg{
+        border: 1px solid black;
+        height: 130px;
+        width: 30%;
+        text-align: center;
+        align-content: center;
+    }
+    #stats{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 2fr));
+        width: 100%;
+        div{
+            border: 1px solid black;
+            text-align: center;
+            h6{
+                width: 100%;
+                height: 50%;
+                align-content: center;
+                justify-content: center;
+            }
+            b{
+                height: 50%;
+                align-content: center;
+                justify-content: center;
+            }
+        }
+    }
+    
+}
+#exampleModalLabel{
+    text-transform: uppercase;
+}
+
+#descrip{
+    height: 200px;
+}
